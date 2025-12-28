@@ -8,14 +8,14 @@
   A: 90 and above
   
   B: 75 to 89.99
-  
+
   C: 50 to 74.99
   
   F: below 50
   
   The program should display the average marks up to two decimal places and the corresponding grade. 
   
-# Date : 
+# Date : 20/11/2025
 # Aim:
  To build a C program that receives inputs for a student’s marks in three subjects, calculates the average, and determines the grade using nested if-else statements with safe floating-point comparisons.
 # Algorithm:
@@ -56,7 +56,52 @@
 ### Step 11:
   Stop
 # Program:
+
+#include <stdio.h>
+
+int main() {
+    float math, science, english;
+    float average;
+    char grade;
+
+    // Input marks
+    printf("Enter marks for Math: ");
+    scanf("%f", &math);
+
+    printf("Enter marks for Science: ");
+    scanf("%f", &science);
+
+    printf("Enter marks for English: ");
+    scanf("%f", &english);
+
+    // Calculate average
+    average = (math + science + english) / 3.0;
+
+    // Determine grade using nested if-else
+    if (average >= 90.0) {
+        grade = 'A';
+    } else {
+        if (average >= 75.0) {
+            grade = 'B';
+        } else {
+            if (average >= 50.0) {
+                grade = 'C';
+            } else {
+                grade = 'F';
+            }
+        }
+    }
+
+    // Output result
+    printf("\nAverage Marks: %.2f", average);
+    printf("\nGrade: %c\n", grade);
+
+    return 0;
+}
+
 # Output:
+
+<img width="1273" height="616" alt="image" src="https://github.com/user-attachments/assets/d5069855-e50c-4e2e-99a0-ec1d50776cb0" />
 
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
