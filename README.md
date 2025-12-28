@@ -56,7 +56,7 @@
 ### Step 11:
   Stop
 # Program:
-
+```
 #include <stdio.h>
 
 int main() {
@@ -98,7 +98,7 @@ int main() {
 
     return 0;
 }
-
+```
 # Output:
 
 <img width="1273" height="616" alt="image" src="https://github.com/user-attachments/assets/d5069855-e50c-4e2e-99a0-ec1d50776cb0" />
